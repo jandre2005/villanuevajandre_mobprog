@@ -10,20 +10,22 @@ class NewsfeedScreen extends StatelessWidget {
       children: const [
         NewsfeedCard(
           userName: 'Ica Gibbs',
-          postContent:
-              'Kilig so much ALDEN <3 YAYA DUB #ALBUD4EVER',
+          postContent: 'KILIG SOMUCH ALDEN <3 YAYADUB! #ALDUBNATIONS',
           date: '2 hours ago',
           numOfLikes: 10,
+          avatarPath: 'assets/images/alden.jpg',
         ),
         NewsfeedCard(
           userName: 'Vinthor Magtanggol',
-          postContent:
-              'Kidlat. #BawalBastos',
+          postContent: 'Kidlat. #BawalBastos',
           date: 'December 1, 2023',
           numOfLikes: 3000,
           hasImage: true,
+          avatarPath: 'assets/images/totoygold.jpg',
+          postImagePath: 'assets/images/vinthor.jpg',
         ),
       ],
     );
   }
 }
+ 

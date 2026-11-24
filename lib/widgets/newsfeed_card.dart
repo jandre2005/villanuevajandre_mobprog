@@ -9,6 +9,8 @@ class NewsfeedCard extends StatelessWidget {
   final String date;
   final int numOfLikes;
   final bool? hasImage;
+  final String? avatarPath;
+  final String? postImagePath;
  
   const NewsfeedCard({
     super.key,
@@ -17,6 +19,8 @@ class NewsfeedCard extends StatelessWidget {
     required this.date,
     required this.numOfLikes,
     this.hasImage,
+    this.avatarPath,
+    this.postImagePath,
   });
  
   @override
@@ -36,7 +40,16 @@ class NewsfeedCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const Icon(Icons.person),
+                CircleAvatar(
+                  radius: ScreenUtil().setSp(16),
+                  backgroundColor: Colors.grey[200],
+                  backgroundImage: avatarPath == null
+                      ? null
+                      : AssetImage(avatarPath!),
+                  child: avatarPath == null
+                      ? const Icon(Icons.person, color: Colors.grey)
+                      : null,
+                ),
                 SizedBox(width: screenUtilWidth),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,13 +96,12 @@ class NewsfeedCard extends StatelessWidget {
             SizedBox(
               height: ScreenUtil().setHeight(5),
             ),
-            hasImage == true
-                ? const Image(
-                    image: AssetImage(
-                      'assets/images/vinthor.jpg',
-                    ),
-                  )
-                : SizedBox.shrink(),
+            if (hasImage == true)
+              Image.asset(
+                postImagePath ?? 'assets/images/vinthor.jpg',
+                fit: BoxFit.cover,
+                width: double.infinity,
+              ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
