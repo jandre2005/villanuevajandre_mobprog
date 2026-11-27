@@ -13,9 +13,9 @@ class NotificationScreen extends StatefulWidget {
 class _NotificationScreenState extends State<NotificationScreen> {
   final List<Map<String, String>> notifications = [
     {
-      'name': 'Sample Name 1',
-      'post': 'Sample Post 1',
-      'description': 'Sample description 1',
+      'name': 'Vinthor Magtanggol',
+      'post': 'Kidlat. #BawalBastos',
+      'description': 'Posted an image in the newsfeed.',
     },
     {
       'name': 'Sample Name 2',
@@ -61,56 +61,6 @@ class _NotificationScreenState extends State<NotificationScreen> {
       'name': 'Sample Name 10',
       'post': 'Sample Post 10',
       'description': 'Sample description 10',
-    },
-    {
-      'name': 'Sample Name 11',
-      'post': 'Sample Post 11',
-      'description': 'Sample description 11',
-    },
-    {
-      'name': 'Sample Name 12',
-      'post': 'Sample Post 12',
-      'description': 'Sample description 12',
-    },
-    {
-      'name': 'Sample Name 13',
-      'post': 'Sample Post 13',
-      'description': 'Sample description 13',
-    },
-    {
-      'name': 'Sample Name 14',
-      'post': 'Sample Post 14',
-      'description': 'Sample description 14',
-    },
-    {
-      'name': 'Sample Name 15',
-      'post': 'Sample Post 15',
-      'description': 'Sample description 15',
-    },
-    {
-      'name': 'Sample Name 16',
-      'post': 'Sample Post 16',
-      'description': 'Sample description 16',
-    },
-    {
-      'name': 'Sample Name 17',
-      'post': 'Sample Post 17',
-      'description': 'Sample description 17',
-    },
-    {
-      'name': 'Sample Name 18',
-      'post': 'Sample Post 18',
-      'description': 'Sample description 18',
-    },
-    {
-      'name': 'Sample Name 19',
-      'post': 'Sample Post 19',
-      'description': 'Sample description 19',
-    },
-    {
-      'name': 'Sample Name 20',
-      'post': 'Sample Post 20',
-      'description': 'Sample description 20',
     },
   ];
  
