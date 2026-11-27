@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
           text: switch (_selectedIndex) {
             1 => 'Notifications',
             2 => 'Profile',
-            _ => 'Facebook',
+            _ => 'FaceBOK',
           },
           fontSize: ScreenUtil().setSp(25),
           color: _selectedIndex == 1 ? Colors.black : fbPrimary,
